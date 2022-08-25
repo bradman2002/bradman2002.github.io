@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--*****************************************************************************
+Title: Contact Page
+Use: To allow users to fill out and submit the contact form.
+Author: Braden Young
+School/Term: Southern Illinois University, Fall 2022
+Developed: Aug 25, 2022
+Tested: Aug 25, 2022; Passed on Edge and Chrome browsers.
+******************************************************************************-->
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Young's family owned and operated local bicycle shop">
+    <meta name="keywords" content="bike shop, bikes, bike, bicycle, ebike, mountain bike">
+    <title>Young's Bicycle Shop</title>
+    <!--Defines the styles for the webpage, utilizing an ID, and three classes-->
+    <style>
+        #paragraphs {
+            font-size: 180%;
+            text-align: center;
+        }
+        .Imagecentered{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            font-size: 180%;
+        }
+        .textcentered{
+            font-size: 180%;
+            text-align: center;
+        }
+        .header{
+            font-size: 250%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header">Young's Bicycles</h1>
+        <h2 class="header">Quality Bike's for all</h2>
+    </header>
+    <main>
+        <!--Image of a mountain bike rider-->
+        <img src="Images/Mountain_Bike.jpg" alt="Mountain Bike Riding"  class="Imagecentered">
+        <p ID="paragraphs">  <!--Includes the ID for the first paragraph-->
+            Young's bicycle shop is a family-owned and operated store, that has been around for over 27 years. <br>
+            We have always offered low and competitive pricing since we opened, and we still do to this day! <br>
+            If you are interested in getting yourself a bike, either browse our selection online or stop in <br>
+            and see us any day from <time datetime="08:00">8:00</time> to <time datetime="17:00">5:00</time> at <strong>247 Bike Rd. Mount Vernon, Illinois</strong>
+        </p>
+        <!--List of bike inventory-->
+        <p class="textcentered"> We have a rapidly changing inventory, but we have many types of bikes that we keep in stock at all times.<br>
+        Including:
+        </p>
+        <ul class="Imagecentered">
+            <li>Road Bikes</li>
+            <li>Mountain Bikes</li>
+            <li>BMX Bikes</li>
+            <li>Folding Bikes</li>
+            <li>Electric Bikes</li>
+        </ul>
+    </main>
+
+    <footer> <!--Includes contact information including the address, and phone number-->
+        <p>
+            <br>Do you have any questions or concerns?<br><strong>Give us a call at <a href="tel:123-555-7890">123-555-7890</a></strong>
+            <br> 247 Bike Rd. Mount Vernon, Illinois <br>
+            <a href="https://siu.edu/">SIU school website</a>
+        </p>
+    </footer>
+
+</body>
+</html>
