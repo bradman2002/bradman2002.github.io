@@ -24,6 +24,12 @@ header {
     padding: 10px;
 }
 
+h2 {
+    font-size: 125%;
+    margin-bottom: .5em;
+    clear: both;
+}
+
 /*Sets the font size, and the padding of the paragraphs*/
 p{
     font-size: 150%;
@@ -32,13 +38,17 @@ p{
 }
 
 /*Sets the font size, and the padding of the list*/
-ul{
+li{
     font-size: 150%;
     padding-left: 10px;
 }
 
+.headerClass{
+    font-size: 50%;
+}
+
 /*Sets the border, and position of the one current image, using a class for the current image*/
-.Image {
+#Image {
     border: thick solid blue;
     border-radius: 20px;
     position: relative;
@@ -52,7 +62,7 @@ ul{
 for the column page*/
 
 /*Sets the font size for the header class, to make sure both columns headers remained uniform in size*/
-.headerClass{
+.headerColumnClass{
     font-size: xx-large;
 }
 
@@ -63,7 +73,7 @@ for the column page*/
 
 /*Sets the parameters of the body in the rental page*/
 .bodyColumn {
-    width: 90%;
+    width: 255%;
     background: lightgray;
     margin: 15px auto;
     border: 2px solid black;
@@ -97,6 +107,38 @@ footer {
     clear: both;
     border-top: 2px solid black;
 }
+
+/*The following CSS is for the navigation menu*/
+
+/*CSS for the nav menu ul*/
+.nav_menu ul {
+    margin: auto;
+    font-size: 50%;
+    padding: 10px;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: 260%;
+}
+
+/*CSS for the nav menu li*/
+.nav_menu li {
+    display: inline;
+    padding: 25px;
+}
+
+/*CSS for the nav menu links*/
+.nav_menu a {
+    color: navy;
+
+}
+
+/*CSS for the current nav menu selection*/
+.nav_menu .current {
+    text-decoration: none;
+}
+
+
 
 
 
