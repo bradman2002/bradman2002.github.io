@@ -13,7 +13,7 @@ html{
 
 /*Sets the width of the body to 725 pixels, and also sets background to light gray*/
 body {
-    width: 725px;
+    width: 100%;
     background: lightgray;
 }
 
@@ -44,6 +44,7 @@ li{
 }
 
 .headerClass{
+    text-align: center;
     font-size: 50%;
 }
 
@@ -54,7 +55,7 @@ li{
     position: relative;
     left: 50px;
     top: 15px;
-    width: 150%;
+    width: 75%;
 }
 
 
@@ -73,7 +74,7 @@ for the column page*/
 
 /*Sets the parameters of the body in the rental page*/
 .bodyColumn {
-    width: 255%;
+    width: 95%;
     background: lightgray;
     margin: 15px auto;
     border: 2px solid black;
@@ -118,7 +119,7 @@ footer {
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    width: 260%;
+    width: 90%;
 }
 
 /*CSS for the nav menu li*/
