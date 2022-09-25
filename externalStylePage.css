@@ -7,36 +7,38 @@ Developed: Aug 30, 2022
 Tested: Aug 30, 2022; Passed on Edge and Chrome browsers.
 *******************************************************************************/
 
-/*Sets the width of the body to 725 pixels, and also sets background to light gray*/
-body {
-
+/*Sets the width of the body to 100%, and also sets background to light gray*/
+body { !important;
     background: lightgray;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*Sets the font size, the color, and the padding of the headers*/
 header {
     font-size: 175%;
     color: navy;
-
+    padding: 1%;
 }
 
 h2 {
     font-size: 125%;
-    margin-bottom: .5em;
+    margin-bottom: 2%;
     clear: both;
 }
 
 /*Sets the font size, and the padding of the paragraphs*/
 p{
     font-size: 150%;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 /*Sets the font size, and the padding of the list*/
 li{
     font-size: 150%;
-    padding-left: 10px;
+    padding-left: .5%;
 }
 
 .headerClass{
@@ -47,9 +49,9 @@ li{
 /*Sets the border, and position of the one current image, using a class for the current image*/
 #Image {
     border: thick solid blue;
-    border-radius: 20px;
+    border-radius: 2.5%;
     position: relative;
-    left: 50px;
+    left: 2.5%;
     top: 15px;
     width: 75%;
 }
@@ -65,14 +67,14 @@ for the column page*/
 
 /*Sets the width of the images in the columns*/
 .ImageColumn{
-    width: 75%;
+    width: 90%;
 }
 
 /*Sets the parameters of the body in the rental page*/
 .bodyColumn {
     width: 95%;
+    margin: auto;
     background: lightgray;
-    margin: 15px auto;
     border: 2px solid black;
 }
 
@@ -86,7 +88,7 @@ for the column page*/
 /*The parameters for the left column*/
 .leftColumn {
     width: 50%;
-    height: 1350px;
+    height: auto;
     border-right: 2px solid black;
     float: left;
     text-align: center;
@@ -111,7 +113,7 @@ footer {
 #nav_menu ul {
     margin: auto;
     font-size: 50%;
-    padding: 10px;
+    padding: 1%;
     text-align: center;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -121,13 +123,12 @@ footer {
 /*CSS for the nav menu li*/
 #nav_menu li {
     display: inline;
-    padding: 25px;
+    padding: 5%;
 }
 
 /*CSS for the nav menu links*/
 #nav_menu a {
     color: navy;
-
 }
 
 /*CSS for the current nav menu selection*/
@@ -140,7 +141,7 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-    /* #menu is the original menu */
+    /* #nav_menu is the original menu */
     #nav_menu {
         display: none;
     }
@@ -148,4 +149,23 @@ footer {
     #mobile_menu{
         display: block;
     }
+
+    #Image{
+        width: 90%
+    }
+    header{
+        font-size: 150%;
+    }
+    html{
+        padding-right: 2%;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    html{
+        margin: .5%;
+    }
+
+
+
 }
