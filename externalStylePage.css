@@ -143,10 +143,10 @@ footer {
     display: none;
 }
 
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
     /* #menu is the original menu */
     #nav_menu {
-        display:none;
+        display: none;
     }
 
     #mobile_menu{
