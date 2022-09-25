@@ -6,6 +6,10 @@ School/Term: Southern Illinois University, Fall 2022
 Developed: Aug 30, 2022
 Tested: Aug 30, 2022; Passed on Edge and Chrome browsers.
 *******************************************************************************/
+/*Sets the whole page to .5% margin*/
+html{
+    margin: .5%;
+}
 
 /*Sets the width of the body to 100%, and also sets background to light gray*/
 body { !important;
@@ -89,7 +93,6 @@ for the column page*/
 .leftColumn {
     width: 50%;
     height: auto;
-    margin: auto;
     border-right: 2px solid black;
     float: left;
     text-align: center;
@@ -99,8 +102,8 @@ for the column page*/
 aside {
     width: 49%;
     float: right;
-    height: auto;
     text-align: center;
+
 }
 
 /*The parameters for the bottom footer*/
@@ -161,6 +164,22 @@ footer {
     html{
         padding-right: 2%;
     }
+    aside {
+        height: auto;
+        border-left: 2px solid black;
+        width: 50%;
+    }
+    .leftColumn { !important;
+        width: 49%;
+        height: auto;
+        float: left;
+        border-right: none;
+        text-align: center;
+    }
+    .headerColumn {
+        font-size: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 767px) {
