@@ -4,7 +4,7 @@ Use: External CSS page for use with the bicycle shop website
 Author: Braden Young
 School/Term: Southern Illinois University, Fall 2022
 Developed: Aug 30, 2022
-Tested: Aug 30, 2022; Passed on Edge and Chrome browsers.
+Tested: Sep 25, 2022; Passed on Edge, Chrome, and Safari browsers.
 *******************************************************************************/
 /*Sets the whole page to .5% margin*/
 html{
@@ -29,6 +29,7 @@ header {
 h2 {
     font-size: 125%;
     margin-bottom: 2%;
+    margin-left: 1%;
     clear: both;
 }
 
@@ -69,9 +70,13 @@ for the column page*/
     font-size: xx-large;
 }
 
+.paragraphColumnClass{
+    font-size: 125%;
+}
+
 /*Sets the width of the images in the columns*/
 .ImageColumn{
-    width: 90%;
+    width: 75%;
 }
 
 /*Sets the parameters of the body in the rental page*/
@@ -100,16 +105,16 @@ for the column page*/
 
 /*The parameters for the right column. The width is set at 49, so it does not collide with the other column*/
 aside {
-    width: 49%;
+    width: 49.7%;
     float: right;
     text-align: center;
-
 }
 
 /*The parameters for the bottom footer*/
 footer {
     clear: both;
     border-top: 2px solid black;
+
 }
 
 /*The following CSS is for the navigation menu*/
@@ -129,11 +134,13 @@ footer {
 #nav_menu li {
     display: inline;
     padding: 5%;
+
 }
 
 /*CSS for the nav menu links*/
 #nav_menu a {
     color: navy;
+    border-right: 2px black;
 }
 
 /*CSS for the current nav menu selection*/
@@ -141,10 +148,14 @@ footer {
     text-decoration: none;
 }
 
+/*Makes it so that the mobile menu will not display, when not using a smaller screen*/
 #mobile_menu{
     display: none;
 }
 
+/*Sets CSS for mobile screen display, including the nav menu, and tweaks of other various items,
+so that it displays better on mobile devices, and screens less than 767 pixels.
+Width set to 767px, per examples in the book*/
 @media only screen and (max-width: 767px) {
     /* #nav_menu is the original menu */
     #nav_menu {
@@ -158,17 +169,21 @@ footer {
     #Image{
         width: 90%
     }
+
     header{
         font-size: 150%;
     }
+
     html{
         padding-right: 2%;
     }
+
     aside {
         height: auto;
         border-left: 2px solid black;
         width: 50%;
     }
+
     .leftColumn { !important;
         width: 49%;
         height: auto;
@@ -176,17 +191,18 @@ footer {
         border-right: none;
         text-align: center;
     }
+
     .headerColumn {
         font-size: 100%;
     }
 
-}
-
-@media only screen and (min-width: 767px) {
-    html{
-        margin: .5%;
+    li{
+        font-size: 125%;
     }
 
-
+    p{
+        font-size: 125%;
+    }
 
 }
+
