@@ -110,11 +110,15 @@ aside {
     text-align: center;
 }
 
-/*The parameters for the bottom footer*/
-footer {
+.columnFooter{
     clear: both;
     border-top: 2px solid black;
 
+}
+
+/*The parameters for the bottom footer*/
+footer {
+    border-top: 2px solid black;
 }
 
 /*The following CSS is for the navigation menu*/
@@ -202,6 +206,13 @@ Width set to 767px, per examples in the book*/
 
     p{
         font-size: 125%;
+    }
+
+    .footerClass{
+        clear: both;
+        width: 85%;
+        margin: 2%;
+        border: 2px solid black;
     }
 
 }
