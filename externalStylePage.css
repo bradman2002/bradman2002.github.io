@@ -143,7 +143,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     /* #menu is the original menu */
     #nav_menu {
         display: none;
@@ -151,12 +151,5 @@ footer {
 
     #mobile_menu{
         display: block;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    /* #menu is the original menu */
-    p{
-        color: pink;
     }
 }
