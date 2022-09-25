@@ -15,14 +15,24 @@
     <meta name="keywords" content="bike shop, bikes, bike, bicycle, ebike, mountain bike, bike rental">
     <!--Links the external CSS stylesheet-->
     <link rel="stylesheet" href="externalStylePage.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
 </head>
 <body>
     <header>
-        <div class="Navigation_Menu">
+        <div class ="Slick Nav Menu">
+            <nav id="mobile_menu"></nav>
             <nav id="nav_menu">
                 <ul>
                     <li><a href="index.htm">Home</a></li>
-                    <li><a href="rentals.htm" class="current"  >Rentals</a></li>
+                    <li><a href="rentals.htm"   class="current"  >Rentals</a></li>
                     <li><a href="sales.htm" >Sales</a></li>
                     <li><a href="services.htm" >Services</a></li>
                     <li><a href="contact.htm" >Contact</a></li>
