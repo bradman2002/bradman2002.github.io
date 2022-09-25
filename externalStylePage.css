@@ -112,7 +112,7 @@ footer {
 /*The following CSS is for the navigation menu*/
 
 /*CSS for the nav menu ul*/
-.nav_menu ul {
+#nav_menu ul {
     margin: auto;
     font-size: 50%;
     padding: 10px;
@@ -123,23 +123,40 @@ footer {
 }
 
 /*CSS for the nav menu li*/
-.nav_menu li {
+#nav_menu li {
     display: inline;
     padding: 25px;
 }
 
 /*CSS for the nav menu links*/
-.nav_menu a {
+#nav_menu a {
     color: navy;
 
 }
 
 /*CSS for the current nav menu selection*/
-.nav_menu .current {
+#nav_menu .current {
     text-decoration: none;
 }
 
+#mobile_menu{
+    display: none;
+}
 
+@media only screen and (max-width: 767px) {
+    /* #menu is the original menu */
+    #nav_menu {
+        display:none;
+    }
 
+    #mobile_menu{
+        display: block;
+    }
+}
 
-
+@media only screen and (max-width: 767px) {
+    /* #menu is the original menu */
+    p{
+        color: pink;
+    }
+}
