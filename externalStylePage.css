@@ -89,6 +89,7 @@ for the column page*/
 .leftColumn {
     width: 50%;
     height: auto;
+    margin: auto;
     border-right: 2px solid black;
     float: left;
     text-align: center;
@@ -98,6 +99,7 @@ for the column page*/
 aside {
     width: 49%;
     float: right;
+    height: auto;
     text-align: center;
 }
 
