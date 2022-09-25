@@ -6,14 +6,10 @@ School/Term: Southern Illinois University, Fall 2022
 Developed: Aug 30, 2022
 Tested: Aug 30, 2022; Passed on Edge and Chrome browsers.
 *******************************************************************************/
-/*Sets the margin of the whole page to 10 pixels*/
-html{
-    margin: 10px;
-}
 
 /*Sets the width of the body to 725 pixels, and also sets background to light gray*/
 body {
-    width: 100%;
+
     background: lightgray;
 }
 
@@ -21,7 +17,7 @@ body {
 header {
     font-size: 175%;
     color: navy;
-    padding: 10px;
+
 }
 
 h2 {
@@ -96,9 +92,9 @@ for the column page*/
     text-align: center;
 }
 
-/*The parameters for the right column. The width is set at 49.5, so it does not collide with the other column*/
+/*The parameters for the right column. The width is set at 49, so it does not collide with the other column*/
 aside {
-    width: 49.5%;
+    width: 49%;
     float: right;
     text-align: center;
 }
