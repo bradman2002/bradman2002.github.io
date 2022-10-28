@@ -4,7 +4,7 @@ Use: External CSS page for use with the bicycle shop website
 Author: Braden Young
 School/Term: Southern Illinois University, Fall 2022
 Developed: Aug 30, 2022
-Tested: Sep 25, 2022; Passed on Edge, Chrome, and Safari browsers.
+Tested: Oct 12, 2022; Passed on Edge, Chrome, and Safari browsers.
 *******************************************************************************/
 /*Sets the whole page to .5% margin*/
 html{
@@ -12,11 +12,12 @@ html{
 }
 
 /*Sets the width of the body to 100%, and also sets background to light gray*/
-body { !important;
+body {
     background: lightgray;
     width: 100%;
     margin: 0;
     padding: 0;
+    font-size: 100%;
 }
 
 /*Sets the font size, the color, and the padding of the headers*/
@@ -43,7 +44,6 @@ p{
 /*Sets the font size, and the padding of the list*/
 li{
     font-size: 150%;
-    padding-left: .5%;
 }
 
 .headerClass{
@@ -51,23 +51,64 @@ li{
     font-size: 50%;
 }
 
-/*Sets the border, and position of the one current image, using a class for the current image*/
+.centered{
+    text-align: center;
+}
+
+/*Sets the border, and position of the one current image, using a class for the current image, and includes the image
+rollover*/
+
 #Image {
+    background-image: url("Images/Mountain_Bike_2_750x500.jpg");
+    width: 100%;
+    height: 500px;
     border: thick solid blue;
-    border-radius: 2.5%;
-    position: relative;
-    left: 2.5%;
-    top: 15px;
-    width: 75%;
+    border-radius: 3%;
+    padding: 0;
+    margin: 0;
+}
+
+#Image:hover {
+    background-image: url("Images/Mountain2_5_750x500.jpg");
+}
+
+#ImageBody{
+    width: 700px;
+    height: 500px;
+    padding-bottom: 3%;
 }
 
 
-/*Includes CSS for the two column page below. Note that several special classes had to be made to accommodate
-for the column page*/
+/*Includes CSS for the image caption*/
+figure{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+figcaption{
+    margin-left: 2%;
+    display: block;
+    width: 325px;
+    left: 2.5%;
+    border-bottom: 2px solid black;
+}
+
+/*CSS for the video*/
+video{
+    padding-left: 2.5%;
+    width: 50%;
+    height: auto;
+}
+
+
+/*******************************************************************************
+Includes CSS for the two column page below. Note that several special classes had to be made to accommodate
+for the column page
+*******************************************************************************/
 
 /*Sets the font size for the header class, to make sure both columns headers remained uniform in size*/
 .headerColumnClass{
-    font-size: xx-large;
+    font-size: 175%;
 }
 
 .paragraphColumnClass{
@@ -113,7 +154,7 @@ aside {
 .columnFooter{
     clear: both;
     border-top: 2px solid black;
-
+    text-align: center;
 }
 
 /*The parameters for the bottom footer*/
@@ -121,7 +162,9 @@ footer {
     border-top: 2px solid black;
 }
 
-/*The following CSS is for the navigation menu*/
+/*******************************************************************************
+The following CSS is for the navigation menu
+*******************************************************************************/
 
 /*CSS for the nav menu ul*/
 #nav_menu ul {
@@ -138,7 +181,6 @@ footer {
 #nav_menu li {
     display: inline;
     padding: 5%;
-
 }
 
 /*CSS for the nav menu links*/
@@ -157,8 +199,86 @@ footer {
     display: none;
 }
 
-/*Sets CSS for mobile screen display, including the nav menu, and tweaks of other various items,
-so that it displays better on mobile devices, and screens less than 767 pixels.
+/*******************************************************************************
+The following CSS is for the table on the Services page
+*******************************************************************************/
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto auto 2%;
+}
+th, td {
+    border: 1px solid black;
+    padding: .5%;
+    text-align: center;
+    font-size: 125%;
+}
+
+/*Sets the width of each column, so that they are fluid in size*/
+th:first-child {
+    width: 21%;
+}
+
+th:nth-child(2) {
+    width: 55%;
+}
+
+th:nth-child(3) {
+    width: 8%;
+}
+
+th:nth-child(4) {
+    width: 16%;
+}
+
+thead {
+    background-color: lightblue;
+}
+
+.trResponsive{
+    display: none;
+}
+
+/*******************************************************************************
+The following CSS is for the form on the Contact page
+*******************************************************************************/
+
+
+label {
+    float: left;
+    width: 100%;
+}
+
+input {
+    margin: .5%;
+}
+
+.inputLong{
+    width: 220px;
+}
+
+fieldset{
+    width: auto;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.fieldsetCenter{
+    margin: auto;
+    width: 50%;
+}
+
+
+
+/*Sets CSS for mobile screen display, including the nav menu, tweaks of other various items, and changes the table on
+the services page so that it displays better on mobile devices, and screens less than 767 pixels.
 Width set to 767px, per examples in the book*/
 @media only screen and (max-width: 767px) {
     /* #nav_menu is the original menu */
@@ -170,34 +290,13 @@ Width set to 767px, per examples in the book*/
         display: block;
     }
 
-    #Image{
-        width: 90%
-    }
-
     header{
+        padding-left: 1%;
         font-size: 150%;
     }
 
     html{
         padding-right: 2%;
-    }
-
-    aside {
-        height: auto;
-        border-left: 2px solid black;
-        width: 50%;
-    }
-
-    .leftColumn { !important;
-        width: 49%;
-        height: auto;
-        float: left;
-        border-right: none;
-        text-align: center;
-    }
-
-    .headerColumn {
-        font-size: 100%;
     }
 
     li{
@@ -215,5 +314,176 @@ Width set to 767px, per examples in the book*/
         border: 2px solid black;
     }
 
+    .headerColumnClass{
+        font-size: xx-large;
+    }
+
+    .paragraphColumnClass{
+        font-size: 125%;
+    }
+
+    /*Sets the width of the images in the columns*/
+    .ImageColumn{
+        width: 75%;
+    }
+
+    /*Sets the parameters of the body in the rental and sales page*/
+    .bodyColumn {
+        width: 97%;
+        margin: auto;
+        background: lightgray;
+        border: 2px solid black;
+    }
+
+    .columnFooter{
+        clear: both;
+        border-top: 2px solid black;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+        clear: both;
+        float: left;
+    }
+
+    .leftColumn {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        text-align: center;
+        clear: both;
+        border-bottom: 2px solid black;
+    }
+
+    .headerColumn {
+        font-size: 100%;
+    }
+
+    /*Sets the mobile parameters for the image rollover, and the image figcaption*/
+    #Image {
+        margin: 0;
+        position: relative;
+        background-image: url("Images/Mountain_Bike_50.jpg");
+        width: 400px;
+        height: 300px;
+    }
+
+    #Image:hover {
+        background-image: url("Images/Mountain2_3_16.jpg");
+    }
+
+    #ImageBody{
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+
+    figcaption{
+        padding: 0;
+        width: 275px;
+        font-size: 85%;
+    }
+
+    /*Sets the mobile parameters for the video*/
+    video{
+        padding-left: 0;
+        width: 95%;
+    }
+
+    /*Mobile parameters for the table on the sales page*/
+    th, td {
+        display: block;
+        font-size: 150%;
+    }
+
+    thead {
+       display: none;
+    }
+
+    tr td:first-child {
+        font-weight: bold;
+        font-size: 175%;
+        background-color: lightblue;
+    }
+
+    tbody td {
+        border-bottom-style: none;
+    }
+
+    tfoot th, tfoot td:nth-of-type(1) {
+        display: none;
+    }
+
+    table{
+        width: 99%;
+        margin: .5% .5% 5%;
+    }
+
+    tr:nth-child(even) {
+        background: none;
+    }
+
+    tr:last-child {
+        border-bottom: 2px solid black;
+    }
+
+    .trResponsive{
+        display: block;
+    }
+
+    fieldset{
+        width: 90%;
+        margin: 1%;
+    }
+
+    .inputLong{
+        width: 50%;
+    }
+
+    .fieldsetCenter{
+        margin: auto;
+        width: auto;
+    }
+
+
 }
+
+/*Sets the image and form to be better handled for smaller screens*/
+@media only screen and (max-width: 500px) {
+    #Image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .inputLong{
+        width: 55%;
+    }
+}
+
+/*Sets the image to be better handled for smaller screens, and tweaks various other items, to better fit on smaller
+screens*/
+@media only screen and (max-width: 420px) {
+    html{
+        margin: 0;
+        padding: 0;
+    }
+    #ImageBody{
+        position: relative;
+        left: -10%;
+        width: 115%;
+    }
+    figcaption{
+        width: 100%;
+    }
+    #audio{
+        width: 75%;
+    }
+
+    .inputLong{
+        width: 70%;
+    }
+}
+
+
 
