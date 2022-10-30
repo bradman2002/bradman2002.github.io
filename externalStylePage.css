@@ -245,36 +245,47 @@ thead {
 The following CSS is for the form on the Contact page
 *******************************************************************************/
 
-
-label {
-    float: left;
-    width: 100%;
+form{
+    display: flex;
+    margin-bottom: 5%;
 }
 
 input {
     margin: .5%;
 }
 
+
 .inputLong{
     width: 220px;
 }
 
 fieldset{
-    width: auto;
-    text-align: center;
-}
-
-form{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 5%;
+    width: 50%;
 }
 
 .fieldsetCenter{
-    margin: auto;
-    width: 55%;
+    width: 50%;
+    text-align: center;
 }
 
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.form-inline label {
+    margin: 1% 10px 1% 0;
+
+}
+
+.form-inline input {
+    padding-right: 1%;
+}
+
+.stateClass{
+    padding-right: 1%;
+}
 
 
 /*Sets CSS for mobile screen display, including the nav menu, tweaks of other various items, and changes the table on
@@ -446,6 +457,24 @@ Width set to 767px, per examples in the book*/
         width: auto;
     }
 
+    .form-inline {
+        display: block;
+    }
+
+    label {
+        float: left;
+        width: 100%;
+    }
+
+    input {
+        margin: .5%;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
 
 }
 
@@ -468,14 +497,17 @@ screens*/
         margin: 0;
         padding: 0;
     }
+
     #ImageBody{
         position: relative;
         left: -10%;
         width: 115%;
     }
+
     figcaption{
         width: 100%;
     }
+
     #audio{
         width: 75%;
     }
@@ -484,6 +516,38 @@ screens*/
         width: 70%;
     }
 }
+
+@media (max-width: 920px) {
+    .form-inline {
+        display: block;
+    }
+
+    fieldset{
+        text-align: center;
+        width: 100%;
+    }
+
+    .fieldsetCenter{
+        margin: auto;
+        width: auto;
+    }
+
+    .specialCentered{
+        text-align: center;
+    }
+}
+
+@media (max-width: 330px) {
+    input{
+        width: 100%;
+    }
+
+    .inputLong{
+        width: 100%;
+    }
+}
+
+
 
 
 

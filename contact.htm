@@ -41,7 +41,7 @@ Tested: Oct 25, 2022; Passed on Edge and Chrome browsers.
     </header>
 
     <main>
-        <h1 class="centered">Become a Member</h1>
+        <h1 class="specialCentered">Contact us</h1>
         <form action="register_account.html" method="get"
               name="registration_form" id="registration_form">
 
@@ -58,24 +58,30 @@ Tested: Oct 25, 2022; Passed on Edge and Chrome browsers.
                 <input type="text" name="Address" id="Address" placeholder="15-50 letters" title="15-50 letters"
                          minlength="15" maxlength="50" required><br>
 
-                <!-- CITY -->
-                <label for="City">City:</label>
-                <input type="text" name="City" id="City" placeholder="4-25 letters" title="4-25 letters"
-                         minlength="4" maxlength="25" required><br>
+                <div class="form-inline">
+                    <!-- CITY -->
+                    <label for="City">City:</label>
+                    <input type="text" name="City" id="City" placeholder="4-25 letters" title="4-25 letters"
+                           minlength="4" maxlength="25" required><br>
 
-                <!-- STATE -->
-                <label for="size_and_style">State:</label><select id="size_and_style" required>
-                    <option value="1">Alabama</option>
-                    <option value="2">Alaska</option>
-                    <option value="3">Illinois</option>
-                    <option value="4">New York</option>
-                    <option value="5">California</option>
-                </select><br>
+                    <!-- STATE -->
+                    <div class="stateClass">
+                        <label for="size_and_style">State:</label><select id="size_and_style" required>
+                        <option value="">Choose State</option>
+                        <option value="1">Alabama</option>
+                        <option value="2">Alaska</option>
+                        <option value="3">Illinois</option>
+                        <option value="4">New York</option>
+                        <option value="5">California</option>
+                    </select>
+                    </div> <br>
 
-                <!-- ZIP -->
-                <label for="Zip_Code">Zip Code:</label>
-                <input class="inputLong" type="text" name="Zip_Code" id="Zip_Code" required pattern="\d{5}([\-]\d{4})?"
-                       placeholder="Must be 99999 or 99999-9999" title="Must be 99999 or 99999-9999" minlength="5" maxlength="10" ><br>
+                    <!-- ZIP -->
+                    <label for="Zip_Code">Zip Code:</label>
+                    <input  class="inputLong" type="text" name="Zip_Code" id="Zip_Code" required pattern="\d{5}([\-]\d{4})?"
+                           placeholder="Must be 99999 or 99999-9999" title="Must be 99999 or 99999-9999" minlength="5" maxlength="10" ><br>
+                </div>
+
 
                 <!-- PHONE -->
                 <label for="Phone">Phone:</label>
@@ -84,27 +90,30 @@ Tested: Oct 25, 2022; Passed on Edge and Chrome browsers.
 
                 <!-- EMAIL -->
                 <label for="email">Email Address:</label>
-                <input class= "inputLong" type="email" name="email" id="email" autofocus required
-                       placeholder="Must be a valid email with an '@'" title="Must be a valid email with an '@'" ><br>
+                <input class= "inputLong" type="email" name="email" id="email" required
+                       placeholder="Must be a valid email with an '@'" title="Must be a valid email with an '@'"
+                       minlength="10" maxlength="25"><br>
 
                 <!-- DATE -->
                 <label for="Date">Date:</label>
                 <input type="text" name="Date" id="Date"  pattern="[01]?\d\/[0-3]\d\/\d{4}"
                        placeholder="MM/DD/YYYY" title="MM/DD/YYYY" required><br>
 
+                <!-- INQUIRY TYPE -->
                 <fieldset class="fieldsetCenter">
                     <legend>Inquiry Type:</legend>
                     <label>Sales
-                        <input type="checkbox" name="Sales" value="Sales" required>
+                        <input type="checkbox" name="Sales" value="Sales" >
                     </label><br>
                     <label>Service
-                        <input type="checkbox" name="Service" value="Service" required>
+                        <input type="checkbox" name="Service" value="Service" >
                     </label><br>
                     <label>Rental
-                        <input type="checkbox" name="Rental" value="Rental" required>
+                        <input type="checkbox" name="Rental" value="Rental" >
                     </label><br>
                 </fieldset>
 
+                <!-- BIKE TYPE -->
                 <fieldset class="fieldsetCenter">
                     <legend>Bicycle Type:</legend>
                     <label>Co-op Cycles CTY 1.1 STEP
@@ -121,25 +130,23 @@ Tested: Oct 25, 2022; Passed on Edge and Chrome browsers.
                     </label><br>
                 </fieldset>
 
-                Password: <br>
+                <label for="password">Password:</label>
                 <input class="inputLong" type="password" name="password" id="password" required  pattern="[a-zA-Z0-9]{6, }"
                        placeholder="Enter a password"  title="Password"><br>
 
 
-                Extra information: <br>
+                <label for="Extra">Extra Information:</label>
                 <input class="inputLong" type="text" id="Extra" placeholder="Must be at least 20 characters long"
                        title="Must be at least 20 characters long" minlength="20" maxlength="200" required ><br>
 
 
                 <fieldset class="fieldsetCenter">
-                    <label>Submit your Contact Information</label>
+                    <label>Submit your Contact Information:</label>
                     <input type="submit" id="submit" value="Submit">
                     <input type="Reset" id="Reset" value="Reset Form"><br>
                 </fieldset>
             </fieldset>
         </form>
     </main>
-
-
 </body>
 </html>
